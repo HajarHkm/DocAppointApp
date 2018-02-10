@@ -1,0 +1,47 @@
+h2{
+text-align: center;
+background-color: transparent;
+color:#00802b;
+font-style: italic;
+font-family: "verdana";
+font-size: 19px;
+}
+
+label{
+color: #00802b;
+background-color: transparent;
+text-align: left;
+}
+
+div{
+background-color: transparent
+}
+
+input[type=submit] {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+}
+
+input[type=button] {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+}
+p{
+	text-align: left;
+	color:solid green;
+	font-size: 17px;
+	font-weight: bold;
+	font-style: italic;
+}

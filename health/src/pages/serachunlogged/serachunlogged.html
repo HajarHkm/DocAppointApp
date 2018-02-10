@@ -1,0 +1,24 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Doctors List</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+    
+  <button ion-item *ngFor="let doc of docs" (click)="onLoaddis(doc)">
+     <ion-avatar item-start>
+          <ion-icon name="person"></ion-icon>
+       
+     </ion-avatar>
+       <p>{{doc.firstname}} {{doc.lastname}}</p>
+       <p>{{doc.email}}</p>
+      
+  </button>
+</ion-list>
+</ion-content>

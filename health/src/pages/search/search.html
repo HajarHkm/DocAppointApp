@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Search</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+<h2>Look for doctors next to u!</h2>
+<table>
+	<tr>
+	    <td><label>City: </label></td>
+        <td><input [(ngModel)]="city" type="text" placeholder="Enter the city?"/></td>
+	</tr>
+	<p></p>
+	<tr>
+		<td><label>Specialty: </label></td>
+        <td><input [(ngModel)]="specialty" type="text" placeholder="Enter doctor's Specialty" /></td>
+	</tr>
+
+</table>
+<p></p>
+<input type="button" (click)="onLoadDoctorsList()" value="Search">
+</ion-content>

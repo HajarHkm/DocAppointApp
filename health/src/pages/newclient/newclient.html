@@ -1,0 +1,88 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>New account</ion-title>  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+<br>
+<form  [formGroup] = "form" (ngSubmit)="onSubmit(form.value)">
+   <table>
+   	  <tr>
+   	  	<td><label>Firstname: </label></td>
+   	  	<td><input type="text"  formControlName="firstname"></td>
+   	  </tr>
+
+      <tr>
+         <td><label> </label> </td>
+        <td *ngIf="!form.controls['firstname'].valid && form.controls['firstname'].touched">Required!</td>
+      </tr>
+
+   	  <tr>
+   	  	<td><label>Lastname: </label></td>
+   	  	<td><input type="text"  formControlName="lastname"></td>
+   	  </tr>
+
+      <tr>
+         <td><label> </label> </td>
+        <td *ngIf="!form.controls['lastname'].valid && form.controls['lastname'].touched">Required!</td>
+      </tr>
+
+      <tr>
+         <td><label> </label> </td>
+        <td *ngIf="!form.controls['city'].valid && form.controls['city'].touched">Required!</td>
+      </tr>
+
+   	  <tr>
+   	  	<td><label>Email: </label></td>
+   	  	<td><input type="Email"  formControlName="email"></td>
+   	  </tr>
+      <tr>
+         <td><label> </label> </td>
+        <td *ngIf="!form.controls['email'].valid && form.controls['email'].touched">Required!</td>
+      </tr>
+   	  <tr>
+   	  	<td><label>Password: </label></td>
+   	  	<td><input type="Password"  formControlName="password"></td>
+   	  </tr>
+
+      <tr>
+         <td><label> </label> </td>
+        <td *ngIf="!form.controls['password'].valid && form.controls['password'].touched">Required(7charmin)!</td>
+      </tr>
+
+      </table>
+      
+    <select  formControlName="docpatient"  >
+     
+     <option value="doc" >Doctor</option>
+     <option value="patient" >Patient</option>
+
+     
+    </select>
+
+    <table *ngIf="form.controls['docpatient']==='doc'">                                                                 
+
+        <tr>
+         <td><label>City: </label></td>
+         <td><input type="text"  formControlName="city"></td>
+        </tr>
+        <tr>
+         <td><label>Adress: </label></td>
+         <td><input type="text"  formControlName="adress"></td>
+        </tr>
+        <tr>
+         <td><label>Specialty: </label></td>
+         <td><input type="text"  formControlName="specialty"></td>
+        </tr>
+   </table>
+   <br><br>
+   <br>
+   <input type="submit" [disabled]="!form.valid"   value="Register">
+	
+  </form>
+
+
+</ion-content>

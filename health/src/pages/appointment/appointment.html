@@ -1,0 +1,33 @@
+
+<ion-header>
+
+  <ion-navbar>
+  <ion-buttons start>
+      <button ion-button icon-only (click)="cancel()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Appointment</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<p>Choose Date and time:</p>
+  <ion-list>
+     <ion-item>
+      <ion-label>At: </ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY HH:mm" pickerFormat="MMM D:HH:mm" [(ngModel)]="event.startTime" [min]="minDate"></ion-datetime>
+    </ion-item>
+ 
+
+ 
+
+  </ion-list>
+  <br>
+  <button ion-button full icon-left (click)="save()">
+    <ion-icon name="mail"></ion-icon> Send email 
+  </button>
+  <p></p>
+</ion-content>

@@ -1,0 +1,103 @@
+
+
+
+h1{
+text-align: center;
+font-family: "Times New Roman", Times, serif;
+font-size: 40px;
+color: #4CAF50;
+
+}
+
+.select-style {
+padding: 5px 8px;
+width: 130%;
+border-right: none;
+border-left: none;
+border-top: none;
+}
+
+h2{
+text-align: center;
+background-color: transparent;
+color:black;
+}
+
+
+input[type=button] {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+}
+
+input[type=submit] {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+}
+
+label{
+color: #00802b;
+background-color: transparent;
+
+}
+
+
+div {
+background-image: url('http://s1.bwallpapers.com/wallpapers/2014/02/11/green-and-white_092340582.jpg');
+background-color: transparent;
+background-position: right top;
+text-align: center;	
+}
+
+input[type=text] {
+border: none;
+border-bottom: 2px solid green;
+background-color: transparent;
+} 
+
+table{
+background-color: transparent;
+}
+
+input[type=Password] {
+border: none;
+border-bottom: 2px solid green;
+background-color: transparent;
+
+} 
+input[type=Email] {
+border: none;
+border-bottom: 2px solid green;
+background-color: transparent;
+
+
+} 
+
+table{
+background-color: transparent;
+}
+
+
+
+ion-icon{
+	color: solid green;
+}
+
+input[type=submit]:hover{
+background-color: #90EE90;
+}
+
+input[type=submit]:disabled{
+background-color: #A9A9A9;
+}

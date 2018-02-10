@@ -1,0 +1,29 @@
+page-search {
+
+}
+
+table{
+margin-top: 35px;
+background-color: transparent;
+font-size: 15px;
+line-height: 1.8;
+
+}
+
+input[type=text] {
+border: none;
+border-bottom: 2px solid green;
+background-color: transparent;
+
+} 
+
+input[type=button] {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+}

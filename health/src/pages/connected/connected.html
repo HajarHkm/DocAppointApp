@@ -1,0 +1,59 @@
+<ion-header>
+
+  <ion-navbar>
+      <ion-buttons end>
+        <button ion-button icon-only (click)="onLoadSearch()">
+          <ion-icon  name="search"></ion-icon>
+        </button>
+      </ion-buttons>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<h2 text-capitalize>Welcome back doctor {{lastname}} {{firstname}}</h2>
+
+<p>Edit ur profile:</p> 
+   <form  [formGroup] = "form" (ngSubmit)="onSubmit(form.value)">
+   	<table>
+   	    <tr text-capitalize>
+          <td><label>Firstname:  </label> </td>
+          <td><input  type="text"  formControlName="firstname" /></td>
+        </tr>
+   	    <tr>
+          <td><label>Lastname:  </label> </td>
+          <td><input  type="text"  formControlName="lastname"/></td>
+        </tr>
+    <tr>
+          <td><label>Email:  </label> </td>
+          <td><input  type="Email" formControlName="email" /></td>
+    </tr>
+    <tr>
+          <td><label>Password:  </label> </td>
+          <td><input  type="Password" formControlName="password" /></td>
+    </tr>
+   	    <tr>
+          <td><label>Specialty:  </label> </td>
+          <td><input  type="text"  formControlName="specialty" /></td>
+        </tr>
+
+    <tr>
+          <td><label>Adress:  </label> </td>
+          <td><input  type="text" placeholder="Add an adress" formControlName="adress" /></td>
+    </tr>
+    <tr>
+          <td><label>City:  </label> </td>
+          <td><input  type="text" formControlName="city" /></td>
+    </tr>
+   	</table>
+    <br>
+    <input type="submit" [disabled]="!form.valid"   value="Edit">
+   </form>
+   
+   <br>
+<input type="button" (click)="onLoadcalendar()" value="Edit Schedule">
+
+
+</ion-content>

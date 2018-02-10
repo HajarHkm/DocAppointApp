@@ -1,0 +1,73 @@
+page-newclient {
+
+}
+input[type=button] {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+}
+
+input[type=submit] {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+}
+
+form{
+	font-size: 15px;
+}
+
+input[type=text] {
+border: none;
+border-bottom: 2px solid green;
+background-color: transparent;
+font-size: 13px;
+
+} 
+
+input[type=Password] {
+border: none;
+border-bottom: 2px solid green;
+background-color: transparent;
+
+} 
+input[type=Email] {
+border: none;
+border-bottom: 2px solid green;
+background-color: transparent;
+
+
+} 
+
+label{
+color: #00802b;
+background-color: transparent;
+}
+
+select{
+	background-color: transparent;
+    border-color: #4CAF50;
+    width: 160px
+}
+
+table{
+background-color: transparent;
+}
+
+input[type=submit]:hover{
+background-color: #90EE90;
+}
+
+input[type=submit]:disabled{
+background-color: #A9A9A9;
+}
